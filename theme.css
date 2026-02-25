@@ -1,0 +1,196 @@
+/* Obsidian Dolch Theme */
+/* A dark theme inspired by classic Dolch color scheme */
+
+:root {
+  /* Dolch color palette */
+  --dolch-bg: #2d2d2d;
+  --dolch-bg-dark: #1e1e1e;
+  --dolch-fg: #d4d4d4;
+  --dolch-accent: #7aa2f7;
+  --dolch-red: #f7768e;
+  --dolch-green: #9ece6a;
+  --dolch-yellow: #e0af68;
+  --dolch-blue: #7aa2f7;
+  --dolch-purple: #bb9af7;
+  --dolch-cyan: #7dcfff;
+  --dolch-gray: #565f89;
+  --dolch-light-gray: #a9b1d6;
+}
+
+/* Base colors */
+.theme-dark {
+  --background-primary: var(--dolch-bg);
+  --background-primary-alt: var(--dolch-bg-dark);
+  --background-secondary: var(--dolch-bg-dark);
+  --background-secondary-alt: #252525;
+  --background-modifier-border: #404040;
+  --background-modifier-form-field: var(--dolch-bg-dark);
+  --background-modifier-form-field-highlighted: #353535;
+  --background-modifier-success: var(--dolch-green);
+  --background-modifier-error: var(--dolch-red);
+  --background-modifier-error-hover: #f7768e;
+  --background-modifier-cover: rgba(0, 0, 0, 0.8);
+  
+  --text-accent: var(--dolch-accent);
+  --text-accent-hover: #8ab4ff;
+  --text-normal: var(--dolch-fg);
+  --text-muted: var(--dolch-light-gray);
+  --text-faint: var(--dolch-gray);
+  --text-error: var(--dolch-red);
+  --text-error-hover: #f7768e;
+  --text-highlight-bg: rgba(122, 162, 247, 0.3);
+  --text-highlight-fg: var(--dolch-fg);
+  --text-selection: rgba(122, 162, 247, 0.4);
+  
+  --interactive-normal: var(--dolch-bg-dark);
+  --interactive-hover: #353535;
+  --interactive-accent: var(--dolch-accent);
+  --interactive-accent-hover: #8ab4ff;
+  --interactive-success: var(--dolch-green);
+  
+  --scrollbar-bg: transparent;
+  --scrollbar-thumb-bg: var(--dolch-gray);
+  --scrollbar-active-thumb-bg: var(--dolch-light-gray);
+  
+  --link-color: var(--dolch-blue);
+  --link-color-hover: #8ab4ff;
+  --link-external-color: var(--dolch-purple);
+  --link-external-color-hover: #c9a8ff;
+  
+  --h1-color: var(--dolch-red);
+  --h2-color: var(--dolch-yellow);
+  --h3-color: var(--dolch-green);
+  --h4-color: var(--dolch-cyan);
+  --h5-color: var(--dolch-blue);
+  --h6-color: var(--dolch-purple);
+}
+
+/* UI Elements */
+.workspace-tab-header.is-active {
+  background-color: var(--dolch-bg);
+  border-bottom: 2px solid var(--dolch-accent);
+}
+
+.nav-file-title.is-active {
+  background-color: rgba(122, 162, 247, 0.2);
+  border-left: 3px solid var(--dolch-accent);
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  background-color: var(--dolch-bg-dark) !important;
+  border: 1px solid #404040;
+}
+
+code[class*="language-"] {
+  color: var(--dolch-fg);
+}
+
+/* Inline code */
+.cm-inline-code {
+  background-color: var(--dolch-bg-dark);
+  color: var(--dolch-cyan);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--dolch-accent);
+  background-color: rgba(122, 162, 247, 0.1);
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: var(--dolch-bg-dark);
+  border-bottom: 2px solid var(--dolch-accent);
+  color: var(--dolch-accent);
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+td {
+  border-bottom: 1px solid #404040;
+  padding: 8px 12px;
+}
+
+tr:hover {
+  background-color: rgba(122, 162, 247, 0.1);
+}
+
+/* Tags */
+.tag {
+  background-color: var(--dolch-bg-dark);
+  color: var(--dolch-cyan);
+  border: 1px solid var(--dolch-cyan);
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.85em;
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+  accent-color: var(--dolch-green);
+}
+
+input[type="checkbox"]:checked {
+  background-color: var(--dolch-green);
+}
+
+/* Graph view */
+.graph-view.color-fill {
+  color: var(--dolch-blue);
+}
+
+.graph-view.color-fill-unresolved {
+  color: var(--dolch-gray);
+  opacity: 0.5;
+}
+
+.graph-view.color-line {
+  color: var(--dolch-light-gray);
+  opacity: 0.3;
+}
+
+.graph-view.color-text {
+  color: var(--dolch-fg);
+}
+
+/* Status bar */
+.status-bar {
+  background-color: var(--dolch-bg-dark);
+  border-top: 1px solid #404040;
+}
+
+/* Ribbon */
+.side-dock-ribbon {
+  background-color: var(--dolch-bg-dark);
+}
+
+/* Settings */
+.modal-bg {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.modal {
+  background-color: var(--dolch-bg);
+  border: 1px solid #404040;
+}
+
+/* Search highlight */
+.search-result-file-matched-text {
+  background-color: rgba(224, 175, 104, 0.3);
+  color: var(--dolch-yellow);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--text-selection);
+}
