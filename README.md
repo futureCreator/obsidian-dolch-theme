@@ -1,5 +1,7 @@
 # Obsidian Dolch Theme
 
+![Obsidian Dolch Theme](screenshot.png)
+
 A dark theme for Obsidian inspired by the classic Dolch color scheme.
 
 ## Features
